@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>VeracityApk.1</display-name>
+  <welcome-file-list>
+    <welcome-file>landing.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>registerUser</servlet-name>
+    <servlet-class>servletServer.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>registerUser</servlet-name>
+     <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>loginUser</servlet-name>
+    <servlet-class>servletServer.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>loginUser</servlet-name>
+     <url-pattern>/loginUser</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>updateUser</servlet-name>
+    <servlet-class>servletServer.UpdateServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>updateUser</servlet-name>
+     <url-pattern>/updateUser</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>DeleteUser</servlet-name>
+    <servlet-class>servletServer.DeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>DeleteUser</servlet-name>
+     <url-pattern>/deleteUser</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>DeleteAllUser</servlet-name>
+    <servlet-class>servletServer.DeleteAllServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>DeleteAllUser</servlet-name>
+     <url-pattern>/deleteAllUser</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+    <servlet-name>SelectUser</servlet-name>
+    <servlet-class>servletServer.SelectServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>SelectUser</servlet-name>
+     <url-pattern>/selectUser</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>SelectAllUser</servlet-name>
+    <servlet-class>servletServer.SelectAllServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>SelectAllUser</servlet-name>
+     <url-pattern>/selectAllUser</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Inbox</servlet-name>
+    <servlet-class>servletServer.InboxServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>Inbox</servlet-name>
+     <url-pattern>/inbox</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>LogOut</servlet-name>
+    <servlet-class>servletServer.LogOutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>LogOut</servlet-name>
+     <url-pattern>/logOut</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

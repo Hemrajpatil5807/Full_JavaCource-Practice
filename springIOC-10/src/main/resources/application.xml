@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="ad" class="com.nt.Address">
+		<constructor-arg value="Jalgaon"></constructor-arg> 
+        <constructor-arg value="Maharashtra"></constructor-arg> 		
+        <constructor-arg value="425001"></constructor-arg> 
+   </bean>
+
+	<bean id="emp" class="com.nt.Employee">
+		<constructor-arg value="101"></constructor-arg>
+		<constructor-arg value="Hemraj"></constructor-arg>
+		<constructor-arg value="67000"></constructor-arg>
+		<constructor-arg ref="ad"></constructor-arg>    
+	</bean>
+
+</beans>

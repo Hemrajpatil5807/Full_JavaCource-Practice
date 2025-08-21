@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+     <bean id="ad" class="com.nt.Address">
+		          <property name="city" value="jalgaon"></property>
+		          <property name="state" value="maharashtra"></property>
+		          <property name="pincode" value="425507"></property>
+     </bean>
+
+	<bean id="emp" class="com.nt.Employee" autowire="byType">
+		<property name="id" value="101" />
+		<property name="name" value="Hemraj" />
+		<property name="sal" value="5980" />
+	</bean>
+
+</beans>

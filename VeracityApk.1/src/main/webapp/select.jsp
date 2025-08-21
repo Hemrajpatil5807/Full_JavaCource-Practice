@@ -1,0 +1,76 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veracity Soft.pvt.ltd</title>
+    <style>
+        body{
+            background-color: rgb(52, 118, 216);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            
+        }
+        .logo{
+            justify-items: center;
+        }
+       .login{
+        margin-left: 35%;
+        margin-top: 10%;
+        justify-items: center;
+        align-items: center;
+
+       }
+        
+        div.login {
+               width: 300px;
+               border: 2px solid rgb(12, 12, 12);
+               border-radius: 20px;
+               padding: 30px;
+               padding-top: 7px;
+               box-shadow: 2px;
+               background-color:whitesmoke;
+         }
+         .button{
+             
+             font-size: medium; 
+             font-style: italic;
+             justify-items: center;
+             margin-left: 25%;
+             border-radius: 10px;
+             padding: 3px 35px;
+         }
+        .input{
+                text-decoration: none;
+                background-color: whitesmoke;
+                border-color: whitesmoke;
+                border: 0;
+                border-bottom: 1px solid gray;
+                outline: none;
+        }
+      .innerDiv{
+        margin-left: 20%;
+      }
+    </style>
+</head>
+<body>
+    <div class="login">
+       <form action="selectUser" method="post">
+            <div class="logo">
+              <h1>Select Employee You Want </h1>
+            </div>
+            <hr>
+              <div class="innerDiv">
+               <label for="id">Enter Employee ID</label><br><br>
+                  <input class="input" type="text" name="id" placeholder="Employee ID">
+                     <br><br>
+                </div>
+                 <br>
+             <div>          
+              <button class="button" type="submit">Submit</button>
+            </div>
+        </form>
+   </div>
+</body>
+</html>
