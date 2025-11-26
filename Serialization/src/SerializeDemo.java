@@ -7,11 +7,9 @@ import java.io.Serializable;
 
 class Dog implements Serializable{
 	int i = 10 , j = 20;
-
+	transient String s =" Not to Serialize"; // transient keyword use to not save value of any variable for security
+                                          // it will store the default value of the variable in serialize file
 }
-
-
-
 
 public class SerializeDemo {
 	
@@ -28,7 +26,7 @@ public class SerializeDemo {
 		Dog d2 = (Dog)ois.readObject();
 		
 		
-		System.out.println(d2.i+"  "+d2.j);
+		System.out.println(d2.i+"  "+d2.j+" "+d2.s);
 		
 	}
 
