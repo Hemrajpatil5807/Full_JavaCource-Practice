@@ -13,7 +13,7 @@ public class InsertData {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = null;
 		//Establish connection with database software.
-		 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/vspl?useSSL=false","root","Hemraj@5807");
+		 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/vspl?useSSL=false","root","hemraj@5807");
 		
 		//Create JDBC statement object it is used send static values
 		Statement st = con.createStatement();
